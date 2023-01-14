@@ -7,7 +7,7 @@ if age >= 18:
     want_to_play = input("do you want to play?(yes/no) ").lower()
     if want_to_play == "yes":
         print("lets begin...")
-        user_answer = input("left or right? ")
+        user_answer = input("left or right? ").lower()
         if user_answer == "left":
             print("correct!")
         else:

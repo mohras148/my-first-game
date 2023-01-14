@@ -1,9 +1,9 @@
 print("welcome to my first game!\n")
 
-name = input("what is your name? ")
+name = input("what is your name? ").capitalize()
 age = int(input("How old are you? "))
 if age >= 18:
-    print("You are old enough to play the game.")
+    print(f"{name}! You are old enough to play the game.")
     want_to_play = input("do you want to play?(yes/no) ").lower()
     if want_to_play == "yes":
         print("lets begin...")
@@ -15,6 +15,6 @@ if age >= 18:
     else:
         print("cya...")
 elif age >= 14:
-    print("you can play with your parents.")
+    print(f"{name}! You can play with your parents.")
 else:
-    print("you are not old enough.")
+    print(f"{name}! You are not old enough.")
